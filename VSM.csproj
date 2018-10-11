@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AA32363B-BB47-427A-806A-13C3BEC15286}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VSM</RootNamespace>
+    <AssemblyName>VSM</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.7.123, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Visual_projects\AjaxRating - GridView\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ASPSnippets.SmsAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SendSMSASP.Net\Bin\ASPSnippets.SmsAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="SMSLibrary">
+      <HintPath>..\..\..\20-01-17 update 1\VSM\VSM\bin\SMSLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddEvent.aspx" />
+    <Content Include="App_Data\VSMDB.mdf" />
+    <Content Include="App_Data\VSMDB_log.ldf">
+      <DependentUpon>VSMDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="EditEmployeeProfile.aspx" />
+    <Content Include="EditVolunteerPage.aspx" />
+    <Content Include="EmployeeProfile.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\demo\222x86.png" />
+    <Content Include="images\demo\320x140.png" />
+    <Content Include="images\demo\480x186-vid.png" />
+    <Content Include="images\demo\480x186.png" />
+    <Content Include="images\demo\978x380.png" />
+    <Content Include="images\demo\avatar.png" />
+    <Content Include="images\demo\backgrounds\01.png" />
+    <Content Include="images\demo\backgrounds\02.png" />
+    <Content Include="images\demo\backgrounds\03.png" />
+    <Content Include="images\demo\backgrounds\04.png" />
+    <Content Include="images\demo\backgrounds\v2.png" />
+    <Content Include="images\demo\backgrounds\volunteer.png" />
+    <Content Include="images\demo\imgl.gif" />
+    <Content Include="images\demo\imgr.gif" />
+    <Content Include="images\FilledStar.gif" />
+    <Content Include="images\from_where_i_sit_illustration_031013.jpg" />
+    <Content Include="images\gallary\01.png" />
+    <Content Include="images\interests\child.png" />
+    <Content Include="images\interests\clean_water.png" />
+    <Content Include="images\interests\education.png" />
+    <Content Include="images\interests\gender_equlity.jpg" />
+    <Content Include="images\interests\health.jpg" />
+    <Content Include="images\interests\no poverty.jpg" />
+    <Content Include="images\interests\rural_dev.png" />
+    <Content Include="images\interests\women.png" />
+    <Content Include="images\interests\zero hunger.png" />
+    <Content Include="images\menu.png" />
+    <Content Include="images\Star.gif" />
+    <Content Include="images\WaitingStar.gif" />
+    <Content Include="index.html" />
+    <Content Include="layout\scripts\jquery.backtotop.js" />
+    <Content Include="layout\scripts\jquery.min.js" />
+    <Content Include="layout\scripts\jquery.mobilemenu.js" />
+    <Content Include="layout\styles\font-awesome.min.css" />
+    <Content Include="layout\styles\fonts\fontawesome-webfont.svg" />
+    <Content Include="layout\styles\framework.css" />
+    <Content Include="layout\styles\layout.css" />
+    <Content Include="LoginPage.aspx" />
+    <Content Include="MasterPageStyleSheet.css" />
+    <Content Include="RegistrationPage.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
+    <Content Include="UpdateEvent.aspx" />
+    <Content Include="Upload_database.aspx" />
+    <Content Include="ViewNRateEvent.aspx" />
+    <Content Include="VolunteerProfile.aspx" />
+    <Content Include="VolunteerRecord.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WelcomePage.aspx" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.1.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddEvent.aspx.cs">
+      <DependentUpon>AddEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddEvent.aspx.designer.cs">
+      <DependentUpon>AddEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditEmployeeProfile.aspx.cs">
+      <DependentUpon>EditEmployeeProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditEmployeeProfile.aspx.designer.cs">
+      <DependentUpon>EditEmployeeProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditVolunteerPage.aspx.cs">
+      <DependentUpon>EditVolunteerPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditVolunteerPage.aspx.designer.cs">
+      <DependentUpon>EditVolunteerPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeProfile.aspx.cs">
+      <DependentUpon>EmployeeProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeProfile.aspx.designer.cs">
+      <DependentUpon>EmployeeProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.aspx.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginPage.aspx.designer.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrationPage.aspx.cs">
+      <DependentUpon>RegistrationPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrationPage.aspx.designer.cs">
+      <DependentUpon>RegistrationPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateEvent.aspx.cs">
+      <DependentUpon>UpdateEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateEvent.aspx.designer.cs">
+      <DependentUpon>UpdateEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upload_database.aspx.cs">
+      <DependentUpon>Upload_database.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upload_database.aspx.designer.cs">
+      <DependentUpon>Upload_database.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewNRateEvent.aspx.cs">
+      <DependentUpon>ViewNRateEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewNRateEvent.aspx.designer.cs">
+      <DependentUpon>ViewNRateEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VolunteerProfile.aspx.cs">
+      <DependentUpon>VolunteerProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VolunteerProfile.aspx.designer.cs">
+      <DependentUpon>VolunteerProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VolunteerRecord.aspx.cs">
+      <DependentUpon>VolunteerRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VolunteerRecord.aspx.designer.cs">
+      <DependentUpon>VolunteerRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomePage.aspx.cs">
+      <DependentUpon>WelcomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WelcomePage.aspx.designer.cs">
+      <DependentUpon>WelcomePage.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage.Master" />
+    <None Include="layout\styles\fonts\fontawesome-webfont.eot" />
+    <None Include="layout\styles\fonts\fontawesome-webfont.ttf" />
+    <None Include="layout\styles\fonts\fontawesome-webfont.woff" />
+    <None Include="layout\styles\fonts\fontawesome-webfont.woff2" />
+    <None Include="layout\styles\fonts\FontAwesome.otf" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52620</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
